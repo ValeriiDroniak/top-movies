@@ -1,6 +1,15 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Exo+2:regular,500,600,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Caption:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
 :root {
 	--accent-bg: #e93810;
 	--accent-color: #f0720c;
@@ -14,17 +23,29 @@
 	--primary-bg: #1e212a;
 	--section-bg: #282c35;
 	--sidebar-bg: #2e323c;
+
+	--font-family-primary: 'Exo 2', Tahoma, Geneva, sans-serif;
+	--font-family-logo: 'Encode Sans Semi Expanded', sans-serif;
+	--font-family-slogan: 'PT Sans Caption', sans-serif;
+}
+
+html {
+	font-size: 10px;
 }
 
 body {
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+	/* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
 		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-		sans-serif;
+		sans-serif; */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background-color: var(--primary-bg);
 	color: var(--secondary);
+	font-size: 16px;
+	font-family: var(--font-family-primary);
+	font-weight: 400;
+	font-style: normal;
 }
 
 code {
@@ -40,9 +61,22 @@ h5,
 h6,
 p {
 	margin: 0;
+	padding: 0;
 }
 
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
 }

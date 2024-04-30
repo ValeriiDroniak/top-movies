@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import { Suspense } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import { Header } from '../Header';
 
 export const Layout = () => {
 	return (
@@ -11,13 +12,7 @@ export const Layout = () => {
 				height: '100vh',
 			}}
 		>
-			<header>
-				<Box component={'nav'}>
-					<NavLink to={'/movies'}>Фільми</NavLink>
-					<NavLink to={'/serials'}>Серіали</NavLink>
-					<NavLink to={'/cartoons'}>Мультфільмами</NavLink>
-				</Box>
-			</header>
+			<Header />
 			<Box
 				component={'main'}
 				sx={{

@@ -1,3 +1,7 @@
 {
-	"recommendations": ["pflannery.vscode-versionlens", "steoates.autoimport"]
+	"recommendations": [
+		"pflannery.vscode-versionlens",
+		"steoates.autoimport",
+		"rvest.vs-code-prettier-eslint"
+	]
 }
