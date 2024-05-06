@@ -1,14 +1,14 @@
 import { lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Layout } from '../Layout';
+import { Layout } from './components/Layout';
 
-const HomePage = lazy(() => import('../../pages/Home'));
-const MoviesPage = lazy(() => import('../../pages/Movies'));
-const SerialsPage = lazy(() => import('../../pages/Serials'));
-const CartoonsPage = lazy(() => import('../../pages/Cartoons'));
-const NotFoundPage = lazy(() => import('../../pages/NotFound'));
+const HomePage = lazy(() => import('./pages/Home'));
+const MoviesPage = lazy(() => import('./pages/Movies'));
+const SerialsPage = lazy(() => import('./pages/Serials'));
+const CartoonsPage = lazy(() => import('./pages/Cartoons'));
+const NotFoundPage = lazy(() => import('./pages/NotFound'));
 
-export function App() {
+function App() {
 	return (
 		<Routes>
 			<Route path="/" element={<Layout />}>
@@ -21,3 +21,5 @@ export function App() {
 		</Routes>
 	);
 }
+
+export default App;

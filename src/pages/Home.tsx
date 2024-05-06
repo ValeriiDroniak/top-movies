@@ -1,6 +1,6 @@
 import { Box, Container } from '@mui/material';
 import { useEffect, useState } from 'react';
-import { ContentList } from '../Components/ContentList';
+import { MoviesList } from '../components/MoviesList';
 import { getPopular } from '../services/api';
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
 		<Box component={'section'}>
 			<Container>
 				<h1>Головна сторінка</h1>
-				<ContentList movies={movies} />
+				<MoviesList movies={movies} />
 			</Container>
 		</Box>
 	);

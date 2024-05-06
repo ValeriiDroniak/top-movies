@@ -19,7 +19,7 @@ type Props = {
 	movie: IMovie;
 };
 
-export const ContentItem: FC<Props> = ({ movie }) => {
+export const MovieItem: FC<Props> = ({ movie }) => {
 	const { title, poster_path, overview } = movie;
 	return (
 		<li style={{ display: 'flex', maxWidth: 'calc(50% - 50px)', gap: 16 }}>
